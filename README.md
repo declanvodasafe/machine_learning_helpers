@@ -10,6 +10,14 @@ For notebooks, store your boilerplate code in `init.ipynb` and run
 
 Then you can use `import ml_helpers as mlh` in all your projects.
 
+## Windows Installation (Requires Admin access)
+Clone this git repo and move it to your home folder (e.g. rename it as `C:\Users\<Username>\.python`)
+To add this folder to your path, go to Control Panel > System and Security > System > Advanced System Settings > Environment Variables
+
+Under "System Variables", create a new `PYTHONPATH` variable (or edit if it's already there) and add `C:\Users\<Username>\.python` to the variable's value.
+
+You can verify this worked by typing `pythom -m ml_helpers` from any directory. There may be some dependencies you'll need (notably `pip install pyjanitor torch scikit-learn`)
+
 ---
 
 # Job submission script instructions
